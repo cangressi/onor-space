@@ -1,0 +1,13 @@
+{
+  "works": [
+    { "author": "Айсаева Малика", "title": "Работа 1", "image": "photo1.jpg", "description": "Описание 1" },
+    { "author": "Айсаева Малика", "title": "Работа 2", "image": "photo2.jpg", "description": "Описание 2" },
+    { "author": "Айсаева Малика", "title": "Работа 3", "image": "photo3.jpg", "description": "Описание 3" },
+    { "author": "Айсаева Малика", "title": "Работа 4", "image": "photo4.jpg", "description": "Описание 4" },
+    { "author": "Айсаева Малика", "title": "Работа 5", "image": "photo5.jpg", "description": "Описание 5" },
+
+    { "author": "Эрматова Айжан", "title": "Работа 1", "image": "photo6.jpg", "description": "Описание 1" },
+    { "author": "Эрматова Айжан", "title": "Работа 2", "image": "photo7.jpg", "description": "Описание 2" },
+    { "author": "Эрматова Айжан", "title": "Работа 3", "image": "photo8.jpg", "description": "Описание 3" }
+  ]
+}

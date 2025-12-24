@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Өнөр space</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background: #111;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 20px 0 5px;
+      font-weight: 600;
+    }
+
+    p {
+      margin: 0 0 20px;
+      color: #ccc;
+    }
+
+    h2 {
+      margin: 40px 0 20px;
+      border-bottom: 1px solid #444;
+      padding-bottom: 5px;
+      font-weight: 600;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 12px;
+      padding: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.9);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal img {
+      max-width: 90%;
+      max-height: 90%;
+    }
+
+    a {
+      color: #aaa;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Өнөр space</h1>
+<p>Онлайн-пространство для современного искусства Кыргызстана</p>
+
+<h2>Айсаева Малика</h2>
+<div class="gallery">
+  <img src="photo1.jpg" onclick="openImg(this.src)">
+  <img src="photo2.jpg" onclick="openImg(this.src)">
+  <img src="photo3.jpg" onclick="openImg(this.src)">
+  <img src="photo4.jpg" onclick="openImg(this.src)">
+  <img src="photo5.jpg" onclick="openImg(this.src)">
+</div>
+
+<h2>Эрматова Айжан</h2>
+<div class="gallery">
+  <img src="photo6.jpg" onclick="openImg(this.src)">
+  <img src="photo7.jpg" onclick="openImg(this.src)">
+  <img src="photo8.jpg" onclick="openImg(this.src)">
+</div>
+<p><a href="about.html">Об авторах</a></p>
+
+<div class="modal" onclick="closeImg()">
+  <img id="big">
+</div>
+
+<script>
+function openImg(src) {
+  document.querySelector(".modal").style.display = "flex";
+  document.getElementById("big").src = src;
+}
+
+function closeImg() {
+  document.querySelector(".modal").style.display = "none";
+}
+</script>
+
+</body>
+</html>
